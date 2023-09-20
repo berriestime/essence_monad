@@ -452,6 +452,7 @@ btnCompatibility.addEventListener("click", (e) => {
   const purposeSocialText = document.querySelector("#purposeSocial");
   const purposeSpiritText = document.querySelector("#purposeSpirit");
   const purposePlanetText = document.querySelector("#purposePlanet");
+  const purposeSecond = document.querySelector("#purposeSecond");
   personpnt.textContent = firstrune;
   creativitypnt.textContent = secondrune;
   lessonspnt.textContent = thirdrune;

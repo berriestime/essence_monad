@@ -1,0 +1,81 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+#matrix {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nameText {
+  display: block;
+  text-align: center;
+}
+
+body {
+  background-color: #fcfcee;
+}
+
+/* button {
+  background-color: #A59FA8;
+} */
+
+button {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #A59FA8;
+  color: #A59FA8;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: #c6b6ce;
+}
+button:active {
+  letter-spacing: 1.5px;
+}
+
+.onclic:hover {
+  color: #1ECD97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ECD97;
+}
+.validate:after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#purposeFirst {
+  display: none;
+}
+
+#purposeSecond {
+  display: none;
+}
