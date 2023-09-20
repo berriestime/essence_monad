@@ -1,3 +1,13 @@
 #matrix {
   display: none;
 }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nameText {
+  display: block;
+  text-align: center;
+}
