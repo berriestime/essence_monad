@@ -15,7 +15,7 @@ btn.addEventListener("click", (e) => {
   const thirdrune = sumDigitsYear(thirdruneRaw); // 7
   const fourthruneRaw = firstrune + secondrune + thirdrune; // 17
   const fourthrune = sumDigitsYear(fourthruneRaw); // 17
-  const fifthruneRaw = fourthrune + fourthrune; //1 + 9 + 7 + 17 = 34 = 3 + 4 = 7
+  const fifthruneRaw = firstrune + secondrune + thirdrune + fourthrune; //1 + 9 + 7 + 17 = 34 = 3 + 4 = 7
   const fifthrune = sumDigitsYear(fifthruneRaw); // 7
   const sixruneRaw = firstrune + fourthrune; // 1 + 17 = 18
   const sixrune = sumDigitsYear(sixruneRaw); // 18
@@ -59,20 +59,24 @@ btn.addEventListener("click", (e) => {
   const twentyFifthRune = sumDigitsYear(twentyFifthRuneRaw); // 16
   // const purposePersonRaw = (firstrune + thirdrune) + (secondrune + fourteenthRune); // (1 + 7) + (9 + 8)
   const purposePersonRawFirstStep = firstrune + thirdrune; // 1 + 7 = 8
-  const purposePersonFirstStep = sumDigitsYear(purposePersonRawFirstStep);
-  const purposePersonRawSecondStep = secondrune + fourteenthRune; // 9 + 8 = 17
-  const purposePersonSecondStep = sumDigitsYear(purposePersonRawSecondStep); // 9 + 8 = 17
+  // const purposePersonFirstStep = sumDigitsYear(purposePersonRawFirstStep); // 8
+  const purposePersonRawSecondStep = secondrune + fourthrune; // 9 + 8 = 17
+  console.log("secondrune: " + secondrune);
+  console.log("fourteenthRune: " + fourthrune);
+  // const purposePersonSecondStep = sumDigitsYear(purposePersonRawSecondStep); // 9 + 8 = 17
   const purposePersonRawThirdStep =
-    purposePersonFirstStep + purposePersonSecondStep; // 8 + 17 = 25
+    purposePersonRawFirstStep + purposePersonRawSecondStep; // 8 + 17 = 25
+  console.log("purposePersonRawFirstStep: " + purposePersonRawFirstStep);
+  console.log("purposePersonRawSecondStep: " + purposePersonRawSecondStep);
   const purposePerson = sumDigitsYear(purposePersonRawThirdStep); // 25
   // const purposeSocialRaw =
   //   (fifteenthRune + seventeenthRune) + (sixteenthRune + eighteenthRune); // (10 + 24) + (16 + 18)
   const purposeSocialRawFirstStep = fifteenthRune + seventeenthRune; // 10 + 24 = 34 = 7
-  const purposeSocialFirstStep = sumDigitsYear(purposeSocialRawFirstStep); // 34 = 7
+  // const purposeSocialFirstStep = sumDigitsYear(purposeSocialRawFirstStep); // 34 = 7
   const purposeSocialRawSecondStep = sixteenthRune + eighteenthRune; // 16 + 18 = 34 = 7
-  const purposeSocialSecondStep = sumDigitsYear(purposeSocialRawSecondStep); // 34 = 7
+  // const purposeSocialSecondStep = sumDigitsYear(purposeSocialRawSecondStep); // 34 = 7
   const purposeSocialRawThirdStep =
-    purposeSocialFirstStep + purposeSocialSecondStep; // 7 + 7 = 14
+    purposeSocialRawFirstStep + purposeSocialRawSecondStep; // 7 + 7 = 14
   const purposeSocial = sumDigitsYear(purposeSocialRawThirdStep); // 14
   const purposeSpiritRaw = purposePerson + purposeSocial; // 25 + 14 = 39 = 12
   const purposeSpirit = sumDigitsYear(purposeSpiritRaw); // 12
@@ -193,9 +197,9 @@ btnCompatibility.addEventListener("click", (e) => {
   const fourthruneSecond = sumDigitsYear(fourthruneRawSecond); // 34 = 7
   const fourthrune = sumDigitsYear(fourthruneFirst + fourthruneSecond); // 7 + 7 = 14
 
-  const fifthruneRawFirst = fourthrune + fourthrune; // 14 + 14 = 28
+  const fifthruneRawFirst = firstrune + secondrune + thirdrune + fourthrune; // 14 + 14 = 28
   const fifthruneFirst = sumDigitsYear(fifthruneRawFirst); // 28 = 10
-  const fifthruneRawSecond = fourthrune + fourthrune; // 14 + 14 = 28
+  const fifthruneRawSecond = firstrune + secondrune + thirdrune + fourthrune; // 14 + 14 = 28
   const fifthruneSecond = sumDigitsYear(fifthruneRawSecond); // 28 = 10
   const fifthrune = sumDigitsYear(fifthruneFirst + fifthruneSecond); // 10 + 10 = 20
 
@@ -344,7 +348,7 @@ btnCompatibility.addEventListener("click", (e) => {
   const purposePersonFirstStepFirst = sumDigitsYear(
     purposePersonRawFirstStepFirst
   ); //16
-  const purposePersonRawSecondStepFirst = secondrune + fourteenthRune; // 18+14=32
+  const purposePersonRawSecondStepFirst = secondrune + fourthrune; // 18+14=32
   const purposePersonSecondStepFirst = sumDigitsYear(
     purposePersonRawSecondStepFirst
   ); //32=5
@@ -357,7 +361,7 @@ btnCompatibility.addEventListener("click", (e) => {
   const purposePersonFirstStepSecond = sumDigitsYear(
     purposePersonRawFirstStepSecond
   ); //16
-  const purposePersonRawSecondStepSecond = secondrune + fourteenthRune; // 18+14=32
+  const purposePersonRawSecondStepSecond = secondrune + fourthrune; // 18+14=32
   const purposePersonSecondStepSecond = sumDigitsYear(
     purposePersonRawSecondStepSecond
   ); //32=5
