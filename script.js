@@ -129,6 +129,8 @@ btn.addEventListener("click", (e) => {
   const purposeSpiritText = document.querySelector("#purposeSpirit");
   const purposePlanetText = document.querySelector("#purposePlanet");
   const nameText = document.querySelector(".nameText");
+  const purposeTable = document.querySelector("#purpose-table");
+
   personpnt.textContent = firstrune;
   creativitypnt.textContent = secondrune;
   lessonspnt.textContent = thirdrune;
@@ -159,6 +161,7 @@ btn.addEventListener("click", (e) => {
   purposeSpiritText.textContent = purposeSpirit;
   purposePlanetText.textContent = purposePlanet;
   nameText.textContent = "Персональная матрица";
+  purposeTable.style.display = "block";
 });
 
 btnCompatibility.addEventListener("click", (e) => {
@@ -456,7 +459,7 @@ btnCompatibility.addEventListener("click", (e) => {
   const purposeSocialText = document.querySelector("#purposeSocial");
   const purposeSpiritText = document.querySelector("#purposeSpirit");
   const purposePlanetText = document.querySelector("#purposePlanet");
-  const purposeSecond = document.querySelector("#purposeSecond");
+  const purposeTable = document.querySelector("#purpose-table");
   personpnt.textContent = firstrune;
   creativitypnt.textContent = secondrune;
   lessonspnt.textContent = thirdrune;
@@ -487,4 +490,5 @@ btnCompatibility.addEventListener("click", (e) => {
   purposeSpiritText.textContent = purposeSpirit;
   purposePlanetText.textContent = purposePlanet;
   nameText.textContent = "Матрица совместимости";
+  purposeTable.style.display = "block";
 });

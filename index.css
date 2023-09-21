@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 #matrix {
@@ -16,66 +16,54 @@
   text-align: center;
 }
 
-body {
-  background-color: #fcfcee;
-}
-
-/* button {
-  background-color: #A59FA8;
-} */
-
-button {
-  outline: none;
-  height: 40px;
-  text-align: center;
-  width: 130px;
-  border-radius: 40px;
-  background: #fff;
-  border: 2px solid #A59FA8;
-  color: #A59FA8;
-  letter-spacing: 1px;
-  text-shadow: 0;
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-button:hover {
-  color: white;
-  background: #c6b6ce;
-}
-button:active {
-  letter-spacing: 1.5px;
-}
-
-.onclic:hover {
-  color: #1ECD97;
-  background: white;
-}
-
-.validate {
-  font-size: 13px;
-  color: white;
-  background: #1ECD97;
-}
-.validate:after {
-  font-family: "FontAwesome";
-  content: "\f00c";
-}
-
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 #purposeFirst {
   display: none;
 }
 
 #purposeSecond {
+  display: none;
+}
+
+input {
+  padding: 1.25em 3.25em 1.25em 3.25em;
+  font-family: "Inter";
+  font-size: 1.25em;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px #d4d5d7 solid;
+  border-radius: 0.5em;
+}
+
+input:hover {
+  background-color: #f3f4f6;
+  border: 1px #f6f8fa solid;
+}
+
+button {
+  padding: 1.25em 2em 1.25em 2em;
+  background-color: #f6f8fa;
+  font-size: 1.25em;
+  line-height: 125%;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  border: 1px #d4d5d7 solid;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f3f4f6;
+  border: 1px #d4d5d7 solid;
+}
+
+.input-matrix {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 20px;
+}
+
+#purpose-table{
   display: none;
 }
