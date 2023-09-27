@@ -4,11 +4,13 @@
 
 #matrix {
   display: none;
+  order: 2;
 }
 
 .container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .nameText {
@@ -58,6 +60,13 @@ button:hover {
 .input-matrix {
   display: flex;
   flex-direction: column;
+  order: 1;
+}
+
+.input-matrix-second {
+  display: flex;
+  flex-direction: column;
+  order: 3;
 }
 
 p {
@@ -66,4 +75,22 @@ p {
 
 #purpose-table{
   display: none;
+}
+
+@media screen and (max-width:1235px) {
+  .input-matrix {
+    order: 1;
+  }
+  
+  .input-matrix-second {
+    order: 2;
+  }
+
+  #matrix {
+    order: 3;
+  }
+
+  .monada {
+    width: 100%;
+  }
 }

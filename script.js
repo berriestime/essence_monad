@@ -6,82 +6,41 @@ btn.addEventListener("click", (e) => {
   const matrix = document.querySelector("#matrix");
   const calculationPersonDate = document.getElementById("persondate").value;
   const splitCalculationPersonDate = calculationPersonDate.split("-");
-  console.log(splitCalculationPersonDate); //[год, месяц, день] 2023 09 01
-  const firstruneRaw = parseInt(splitCalculationPersonDate[2]); // 01
-  const firstrune = sumDigitsYear(firstruneRaw); // 1
-  const secondruneRaw = parseInt(splitCalculationPersonDate[1]); // 09
-  const secondrune = sumDigitsYear(secondruneRaw); // 9
-  const thirdruneRaw = parseInt(splitCalculationPersonDate[0]); // 2023
-  const thirdrune = sumDigitsYear(thirdruneRaw); // 7
-  const fourthruneRaw = firstrune + secondrune + thirdrune; // 17
-  const fourthrune = sumDigitsYear(fourthruneRaw); // 17
-  const fifthruneRaw = firstrune + secondrune + thirdrune + fourthrune; //1 + 9 + 7 + 17 = 34 = 3 + 4 = 7
-  const fifthrune = sumDigitsYear(fifthruneRaw); // 7
-  const sixruneRaw = firstrune + fourthrune; // 1 + 17 = 18
-  const sixrune = sumDigitsYear(sixruneRaw); // 18
-  const seventhruneRaw = secondrune + thirdrune; // 9 + 7
-  const seventhrune = sumDigitsYear(seventhruneRaw); // 16
-  const eighthruneRaw = fifthrune + thirdrune; // 7 + 7
-  const eighthrune = sumDigitsYear(eighthruneRaw); // 14
-  const ninethruneRaw = eighthrune + thirdrune; // 14 + 7 = 21
-  const ninethrune = sumDigitsYear(ninethruneRaw); //21
-  const tenruneRaw = fifthrune + fourthrune; // 7 + 17 = 24
-  const tenrune = sumDigitsYear(tenruneRaw); // 24
-  const elevenruneRaw = tenrune + fourthrune; // 24 + 17 = 41 = 5
-  const elevenrune = sumDigitsYear(elevenruneRaw); // 5
-  const twelveruneRaw = eighthrune + tenrune; // 14 + 24 = 38 = 11
-  const twelverune = sumDigitsYear(twelveruneRaw); // 11
-  const thirteenthRuneRaw = twelverune + eighthrune; // 11 + 14 = 25
-  const thirteenthRune = sumDigitsYear(thirteenthRuneRaw); //25
-  const fourteenthRuneRaw = twelverune + tenrune; // 11 + 24 = 35 = 8
-  const fourteenthRune = sumDigitsYear(fourteenthRuneRaw); // 8
-  const fifteenthRuneRaw = firstrune + secondrune; // 1 + 9 = 10
-  const fifteenthRune = sumDigitsYear(fifteenthRuneRaw); // 10
-  const sixteenthRuneRaw = secondrune + thirdrune; // 9 + 7 = 16
-  const sixteenthRune = sumDigitsYear(sixteenthRuneRaw); // 16
-  const seventeenthRuneRaw = thirdrune + fourthrune; // 7 + 17 = 24
-  const seventeenthRune = sumDigitsYear(seventeenthRuneRaw); // 24
-  const eighteenthRuneRaw = firstrune + fourthrune; // 1 + 17 = 18
-  const eighteenthRune = sumDigitsYear(eighteenthRuneRaw); // 18
-  const nineteenthRuneRaw = fifteenthRune + sixteenthRune; // 10 + 16 = 26 = 8
-  const nineteenthRune = sumDigitsYear(nineteenthRuneRaw); // 8
-  const twentiethRuneRaw = secondrune + nineteenthRune; // 9 + 8 = 17
-  const twentiethRune = sumDigitsYear(twentiethRuneRaw); // 17
-  const twentyFirstRuneRaw = firstrune + fifthrune; // 1 + 7 = 8
-  const twentyFirstRune = sumDigitsYear(twentyFirstRuneRaw); // 8
-  const twentySecondRuneRaw = firstrune + twentyFirstRune; // 1 + 8 = 9
-  const twentySecondRune = sumDigitsYear(twentySecondRuneRaw); // 9
-  const twentyThirdRuneRaw = secondrune + fourthrune; // 9 + 17 = 26
-  const twentyThirdRune = sumDigitsYear(twentyThirdRuneRaw); // 8
-  const twentyFourthRuneRaw = firstrune + thirdrune; // 1 + 7
-  const twentyFourthRune = sumDigitsYear(twentyFourthRuneRaw); // 8
-  const twentyFifthRuneRaw = twentyThirdRune + twentyFourthRune; // 8 + 8 = 16
-  const twentyFifthRune = sumDigitsYear(twentyFifthRuneRaw); // 16
-  // const purposePersonRaw = (firstrune + thirdrune) + (secondrune + fourteenthRune); // (1 + 7) + (9 + 8)
-  const purposePersonRawFirstStep = firstrune + thirdrune; // 1 + 7 = 8
-  // const purposePersonFirstStep = sumDigitsYear(purposePersonRawFirstStep); // 8
-  const purposePersonRawSecondStep = secondrune + fourthrune; // 9 + 8 = 17
-  console.log("secondrune: " + secondrune);
-  console.log("fourteenthRune: " + fourthrune);
-  // const purposePersonSecondStep = sumDigitsYear(purposePersonRawSecondStep); // 9 + 8 = 17
-  const purposePersonRawThirdStep =
-    purposePersonRawFirstStep + purposePersonRawSecondStep; // 8 + 17 = 25
-  console.log("purposePersonRawFirstStep: " + purposePersonRawFirstStep);
-  console.log("purposePersonRawSecondStep: " + purposePersonRawSecondStep);
-  const purposePerson = sumDigitsYear(purposePersonRawThirdStep); // 25
-  // const purposeSocialRaw =
-  //   (fifteenthRune + seventeenthRune) + (sixteenthRune + eighteenthRune); // (10 + 24) + (16 + 18)
-  const purposeSocialRawFirstStep = fifteenthRune + seventeenthRune; // 10 + 24 = 34 = 7
-  // const purposeSocialFirstStep = sumDigitsYear(purposeSocialRawFirstStep); // 34 = 7
-  const purposeSocialRawSecondStep = sixteenthRune + eighteenthRune; // 16 + 18 = 34 = 7
-  // const purposeSocialSecondStep = sumDigitsYear(purposeSocialRawSecondStep); // 34 = 7
-  const purposeSocialRawThirdStep =
-    purposeSocialRawFirstStep + purposeSocialRawSecondStep; // 7 + 7 = 14
-  const purposeSocial = sumDigitsYear(purposeSocialRawThirdStep); // 14
-  const purposeSpiritRaw = purposePerson + purposeSocial; // 25 + 14 = 39 = 12
-  const purposeSpirit = sumDigitsYear(purposeSpiritRaw); // 12
-  const purposePlanetRaw = purposeSocial + purposeSpirit; // 14 + 12 = 26 = 8
-  const purposePlanet = sumDigitsYear(purposePlanetRaw); // 8
+  const firstrune = sumDigitsYear(parseInt(splitCalculationPersonDate[2]));
+  const secondrune = sumDigitsYear(parseInt(splitCalculationPersonDate[1]));
+  const thirdrune = sumDigitsYear(parseInt(splitCalculationPersonDate[0]));
+  const fourthrune = sumDigitsYear(firstrune + secondrune + thirdrune);
+  const fifthrune = sumDigitsYear(
+    firstrune + secondrune + thirdrune + fourthrune
+  );
+  const sixrune = sumDigitsYear(firstrune + fourthrune);
+  const seventhrune = sumDigitsYear(secondrune + thirdrune);
+  const eighthrune = sumDigitsYear(fifthrune + thirdrune);
+  const ninethrune = sumDigitsYear(eighthrune + thirdrune);
+  const tenrune = sumDigitsYear(fifthrune + fourthrune);
+  const elevenrune = sumDigitsYear(tenrune + fourthrune);
+  const twelverune = sumDigitsYear(eighthrune + tenrune);
+  const thirteenthRune = sumDigitsYear(twelverune + eighthrune);
+  const fourteenthRune = sumDigitsYear(twelverune + tenrune);
+  const fifteenthRune = sumDigitsYear(firstrune + secondrune);
+  const sixteenthRune = sumDigitsYear(secondrune + thirdrune);
+  const seventeenthRune = sumDigitsYear(thirdrune + fourthrune);
+  const eighteenthRune = sumDigitsYear(firstrune + fourthrune);
+  const nineteenthRune = sumDigitsYear(fifteenthRune + sixteenthRune);
+  const twentiethRune = sumDigitsYear(secondrune + nineteenthRune);
+  const twentyFirstRune = sumDigitsYear(firstrune + fifthrune);
+  const twentySecondRune = sumDigitsYear(firstrune + twentyFirstRune);
+  const twentyThirdRune = sumDigitsYear(secondrune + fourthrune);
+  const twentyFourthRune = sumDigitsYear(firstrune + thirdrune);
+  const twentyFifthRune = sumDigitsYear(twentyThirdRune + twentyFourthRune);
+  const purposePerson = sumDigitsYear(
+    firstrune + thirdrune + (secondrune + fourthrune)
+  );
+  const purposeSocial = sumDigitsYear(
+    fifteenthRune + seventeenthRune + (sixteenthRune + eighteenthRune)
+  );
+  const purposeSpirit = sumDigitsYear(purposePerson + purposeSocial);
+  const purposePlanet = sumDigitsYear(purposeSocial + purposeSpirit);
 
   function sumDigitsYear(n) {
     if (n <= 25) {

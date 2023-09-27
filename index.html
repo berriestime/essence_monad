@@ -21,19 +21,13 @@
         </div>
         <input type="date" id="persondate" />
         <button id="btn">Рассчитать</button>
-        <div id="purpose-table">
-          <p>Призвание:</p>
-          <p>Личное: <test id="purposePerson"></test></p>
-          <p>Общественное: <test id="purposeSocial"></test></p>
-          <p>Духовное: <test id="purposeSpirit"></test></p>
-          <p>Глобальное: <test id="purposePlanet"></test></p>
-        </div>
       </div>
       <div id="matrix">
         <div>
           <p class="nameText"></p>
         </div>
         <svg
+          class="monada"
           width="622"
           height="726"
           viewBox="0 0 622 726"
@@ -632,8 +626,15 @@
           />
           <path d="M157.5 424.5V305.5H463.5V424.5H157.5Z" stroke="black" />
         </svg>
+        <div id="purpose-table">
+          <p>Призвание:</p>
+          <p>Личное: <test id="purposePerson"></test></p>
+          <p>Общественное: <test id="purposeSocial"></test></p>
+          <p>Духовное: <test id="purposeSpirit"></test></p>
+          <p>Глобальное: <test id="purposePlanet"></test></p>
+        </div>
       </div>
-      <div class="input-matrix">
+      <div class="input-matrix-second">
         <p>Матрица совместимости:</p>
         <input type="date" id="persondateFirst" />
         <input type="date" id="persondateSecond" />
