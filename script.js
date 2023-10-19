@@ -58,7 +58,14 @@ btn.addEventListener("click", (e) => {
     return sum;
   }
   matrix.style.display = "block";
-  const personpnt = document.querySelector("#personpnt");
+
+  const setElemTextContent = (selector, value) => {
+    const elem = document.querySelector(selector);
+    elem.textContent = value;
+  };
+
+  setElemTextContent("#personpnt", firstrune);
+
   const creativitypnt = document.querySelector("#creativitypnt");
   const lessonspnt = document.querySelector("#lessonspnt");
   const goalpnt = document.querySelector("#goalpnt");
@@ -90,7 +97,6 @@ btn.addEventListener("click", (e) => {
   const nameText = document.querySelector(".nameText");
   const purposeTable = document.querySelector("#purpose-table");
 
-  personpnt.textContent = firstrune;
   creativitypnt.textContent = secondrune;
   lessonspnt.textContent = thirdrune;
   goalpnt.textContent = fourthrune;

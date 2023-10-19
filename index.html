@@ -16,14 +16,14 @@
   <body>
     <div class="container">
       <div class="input-matrix">
-        <div>
+        <div class="title">
           <p>Персональная матрица:</p>
         </div>
-        <input type="date" id="persondate" />
+        <input type="date" id="persondate" class="date-input" />
         <button id="btn">Рассчитать</button>
       </div>
       <div id="matrix">
-        <div>
+        <div class="title">
           <p class="nameText"></p>
         </div>
         <svg
@@ -627,17 +627,35 @@
           <path d="M157.5 424.5V305.5H463.5V424.5H157.5Z" stroke="black" />
         </svg>
         <div id="purpose-table">
-          <p>Призвание:</p>
-          <p>Личное: <test id="purposePerson"></test></p>
-          <p>Общественное: <test id="purposeSocial"></test></p>
-          <p>Духовное: <test id="purposeSpirit"></test></p>
-          <p>Глобальное: <test id="purposePlanet"></test></p>
+          <p class="purpose-wrapper-margin">Призвание:</p>
+          <div class="purpose-wrapper">
+            <img src="./user.png" alt="user" class="purpose-img" />
+            <p>Личное: <test id="purposePerson"></test></p>
+          </div>
+          <div class="purpose-wrapper">
+            <img src="./group.png" alt="group" class="purpose-img" />
+            <p>Общественное: <test id="purposeSocial"></test></p>
+          </div>
+          <div class="purpose-wrapper">
+            <img
+              src="./lotus-flower.png"
+              alt="lotus-flower"
+              class="purpose-img"
+            />
+            <p>Духовное: <test id="purposeSpirit"></test></p>
+          </div>
+          <div class="purpose-wrapper">
+            <img src="./galaxy.png" alt="galaxy" class="purpose-img" />
+            <p>Глобальное: <test id="purposePlanet"></test></p>
+          </div>
         </div>
       </div>
       <div class="input-matrix-second">
-        <p>Матрица совместимости:</p>
-        <input type="date" id="persondateFirst" />
-        <input type="date" id="persondateSecond" />
+        <div class="title">
+          <p>Матрица совместимости:</p>
+        </div>
+        <input type="date" id="persondateFirst" class="date-input" />
+        <input type="date" id="persondateSecond" class="date-input" />
         <button id="btnCompatibility">Рассчитать</button>
       </div>
     </div>

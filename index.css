@@ -1,4 +1,7 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
@@ -11,11 +14,13 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 2em;
 }
 
 .nameText {
   display: block;
   text-align: center;
+  background: #d4bde7;
 }
 
 #purposeFirst {
@@ -75,6 +80,32 @@ p {
 
 #purpose-table{
   display: none;
+}
+
+.title {
+  align-self: center;
+  padding-bottom: 1em;
+}
+
+.date-input{
+margin-bottom: 0.5em;
+}
+
+.monada {
+  height: 38em;
+}
+
+.purpose-img{
+  height: 1em;
+  margin-right: 0.2em;
+}
+
+.purpose-wrapper {
+  display: flex;
+}
+
+.purpose-wrapper-margin{
+  margin-bottom: 0.2em;
 }
 
 @media screen and (max-width:1235px) {
